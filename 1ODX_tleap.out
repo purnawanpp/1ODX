@@ -20,12 +20,12 @@ ff19SB AA-specific backbone CMAPs for protein 07/25/2019
 Loading library: /home/lynfield/miniconda3/dat/leap/lib/amino19.lib
 Loading library: /home/lynfield/miniconda3/dat/leap/lib/aminoct12.lib
 Loading library: /home/lynfield/miniconda3/dat/leap/lib/aminont12.lib
------ Source: /home/lynfield/miniconda3/dat/leap/cmd/leaprc.gaff
------ Source of /home/lynfield/miniconda3/dat/leap/cmd/leaprc.gaff done
+----- Source: /home/lynfield/miniconda3/dat/leap/cmd/leaprc.gaff2
+----- Source of /home/lynfield/miniconda3/dat/leap/cmd/leaprc.gaff2 done
 Log file: ./leap.log
-Loading parameters: /home/lynfield/miniconda3/dat/leap/parm/gaff.dat
+Loading parameters: /home/lynfield/miniconda3/dat/leap/parm/gaff2.dat
 Reading title:
-AMBER General Force Field for organic molecules (Version 1.81, May 2017)
+AMBER General Force Field for organic molecules (Version 2.11, May 2016)
 ----- Source: /home/lynfield/miniconda3/dat/leap/cmd/leaprc.water.opc
 ----- Source of /home/lynfield/miniconda3/dat/leap/cmd/leaprc.water.opc done
 Loading library: /home/lynfield/miniconda3/dat/leap/lib/atomic_ions.lib
@@ -55,11 +55,6 @@ Loading PDB file: ./1ODX_clean_H.pdb
   Volume: 315216.826 A^3 
   Total mass 150718.594 amu,  Density 0.794 g/cc
   Added 7137 residues.
-
-/home/lynfield/miniconda3/bin/teLeap: Warning!
-addIons: 1st Ion & target unit have charges of the same sign:
-     unit charge = 5.00299; ion1 charge = 1;
-     can't neutralize.
 5 Cl- ions required to neutralize.
 Adding 5 counter ions to "mol" using 1A grid
 Grid extends from solute vdw + 2.36  to  8.34
@@ -124,4 +119,4 @@ Marking per-residue atom chain types.
  (no restraints)
 	Quit
 
-Exiting LEaP: Errors = 0; Warnings = 2; Notes = 1.
+Exiting LEaP: Errors = 0; Warnings = 1; Notes = 1.
