@@ -3,6 +3,7 @@ source leaprc.gaff2 #Source leaprc file for gaff
 source leaprc.water.opc #Source leaprc file for TIP3P water model
 loadamberprep 0E8_clean_H.prepi #Load the prepi file for the ligand
 loadamberparams 0E8.frcmod #Load the additional frcmod file for ligand
+loadamberparams frcmod.opc #Load the additional frchod file for water model
 mol = loadpdb 1ODX_clean_H.pdb #Load PDB file for protein-ligand complex
 solvatebox mol OPCBOX 8 #Solvate the complex with a cubic water box
 addions mol Cl- 0 #Add Cl- ions to neutralize the system

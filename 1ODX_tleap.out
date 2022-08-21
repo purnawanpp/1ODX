@@ -46,6 +46,10 @@ Loading parameters: ./0E8.frcmod
 Reading force field modification type file (frcmod)
 Reading title:
 Remark line goes here
+Loading parameters: /home/lynfield/miniconda3/dat/leap/parm/frcmod.opc
+Reading force field modification type file (frcmod)
+Reading title:
+Parameters for OPC water (JPCL, 2014, 5 (21), pp 3863–3871) 
 Loading PDB file: ./1ODX_clean_H.pdb
   total atoms in file: 3209
   Solute vdw bounding box:              45.513 40.782 62.714
