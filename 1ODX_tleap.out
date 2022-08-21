@@ -1,0 +1,127 @@
+-I: Adding /home/lynfield/miniconda3/dat/leap/prep to search path.
+-I: Adding /home/lynfield/miniconda3/dat/leap/lib to search path.
+-I: Adding /home/lynfield/miniconda3/dat/leap/parm to search path.
+-I: Adding /home/lynfield/miniconda3/dat/leap/cmd to search path.
+-s: Ignoring all leaprc startup files.
+-f: Source 1ODX_tleap.in.
+
+Welcome to LEaP!
+Sourcing: ./1ODX_tleap.in
+----- Source: /home/lynfield/miniconda3/dat/leap/cmd/leaprc.protein.ff19SB
+----- Source of /home/lynfield/miniconda3/dat/leap/cmd/leaprc.protein.ff19SB done
+Log file: ./leap.log
+Loading parameters: /home/lynfield/miniconda3/dat/leap/parm/parm19.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA + ff19SB
+Loading parameters: /home/lynfield/miniconda3/dat/leap/parm/frcmod.ff19SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff19SB AA-specific backbone CMAPs for protein 07/25/2019
+Loading library: /home/lynfield/miniconda3/dat/leap/lib/amino19.lib
+Loading library: /home/lynfield/miniconda3/dat/leap/lib/aminoct12.lib
+Loading library: /home/lynfield/miniconda3/dat/leap/lib/aminont12.lib
+----- Source: /home/lynfield/miniconda3/dat/leap/cmd/leaprc.gaff
+----- Source of /home/lynfield/miniconda3/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /home/lynfield/miniconda3/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.81, May 2017)
+----- Source: /home/lynfield/miniconda3/dat/leap/cmd/leaprc.water.opc
+----- Source of /home/lynfield/miniconda3/dat/leap/cmd/leaprc.water.opc done
+Loading library: /home/lynfield/miniconda3/dat/leap/lib/atomic_ions.lib
+Loading library: /home/lynfield/miniconda3/dat/leap/lib/solvents.lib
+Loading parameters: /home/lynfield/miniconda3/dat/leap/parm/frcmod.opc
+Reading force field modification type file (frcmod)
+Reading title:
+Parameters for OPC water (JPCL, 2014, 5 (21), pp 3863–3871) 
+Loading parameters: /home/lynfield/miniconda3/dat/leap/parm/frcmod.ionslm_126_opc
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of atomic ions for the OPC water model (12-6 set)
+Loading Prep file: ./0E8_clean_H.prepi
+
+/home/lynfield/miniconda3/bin/teLeap: Warning!
+('.' follows exponent in NUMBER-like thing (0E8.frcmod))
+Loading parameters: ./0E8.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading PDB file: ./1ODX_clean_H.pdb
+  total atoms in file: 3209
+  Solute vdw bounding box:              45.513 40.782 62.714
+  Total bounding box for atom centers:  61.513 56.782 78.714
+  Solvent unit box:                     18.865 18.478 19.006
+  Total vdw box size:                   64.636 59.435 82.053 angstroms.
+  Volume: 315216.826 A^3 
+  Total mass 150718.594 amu,  Density 0.794 g/cc
+  Added 7137 residues.
+
+/home/lynfield/miniconda3/bin/teLeap: Warning!
+addIons: 1st Ion & target unit have charges of the same sign:
+     unit charge = 5.00299; ion1 charge = 1;
+     can't neutralize.
+5 Cl- ions required to neutralize.
+Adding 5 counter ions to "mol" using 1A grid
+Grid extends from solute vdw + 2.36  to  8.34
+Resolution:      1.00 Angstrom.
+Solvent present: replacing closest with ion
+	 when steric overlaps occur
+Calculating grid charges
+(Replacing solvent molecule)
+Placed Cl- in mol at (7.25, -3.41, -18.10).
+(Replacing solvent molecule)
+Placed Cl- in mol at (8.84, -8.63, 28.83).
+(Replacing solvent molecule)
+Placed Cl- in mol at (12.90, -14.39, -14.97).
+(Replacing solvent molecule)
+Placed Cl- in mol at (-6.08, -13.46, -31.45).
+(Replacing solvent molecule)
+Placed Cl- in mol at (9.75, -22.62, 10.38).
+
+Done adding ions.
+Checking Unit.
+
+/home/lynfield/miniconda3/bin/teLeap: Note.
+Ignoring the warnings from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+old PREP-specified impropers:
+ <0E8 199>:  N    O1   C    O2  
+ <0E8 199>:  C    CA   N    H   
+ <0E8 199>:  CB   CD1  CG   CD2 
+ <0E8 199>:  CG   CE1  CD1  HD1 
+ <0E8 199>:  CD1  CZ   CE1  HE1 
+ <0E8 199>:  CE1  CE2  CZ   HZ  
+ <0E8 199>:  CZ   CD2  CE2  HE2 
+ <0E8 199>:  CG   CE2  CD2  HD2 
+ <0E8 199>:  CA1  C6   N2   H1  
+ <0E8 199>:  N2   O11  C6   O21 
+ <0E8 199>:  CB1  CD11 CG1  CD21
+ <0E8 199>:  CG1  CE11 CD11 HD11
+ <0E8 199>:  CD11 CZ1  CE11 HE11
+ <0E8 199>:  CE11 CE21 CZ1  HZ1 
+ <0E8 199>:  CZ1  CD21 CE21 HE21
+ <0E8 199>:  CG1  CE21 CD21 HD21
+ total 575 improper torsions applied
+ 16 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CPHE	2
+	NPRO	2
+  )
+ (no restraints)
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 2; Notes = 1.
